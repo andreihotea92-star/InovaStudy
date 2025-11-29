@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Study Tools – Learn Smarter, Not Harder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Simple AI tools, workflows, and tips to help students study faster, take better notes, and understand anything.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    body { background:#020617; color:#f9fafb; line-height:1.6; }
+    a { color: inherit; }
+    header { position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); background:rgba(2,6,23,0.92); border-bottom:1px solid rgba(148,163,184,0.3); }
+    .container { max-width:1000px; margin:0 auto; padding:16px 20px; }
+    .nav-row { display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-weight:700; letter-spacing:.08em; font-size:16px; text-transform:uppercase; }
+    nav a { margin-left:16px; font-size:14px; opacity:.8; text-decoration:none; }
+    nav a:hover { opacity:1; }
+
+    main { padding:10px 20px 40px; max-width:1000px; margin:0 auto; }
+
+    .hero { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:28px; padding:26px 0 10px; align-items:center; }
+    @media (max-width:768px){ .hero{ grid-template-columns:1fr; } }
+
+    .pill { display:inline-flex; align-items:center; padding:3px 10px; border-radius:999px; border:1px solid rgba(148,163,184,0.7); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#a5b4fc; margin-bottom:10px; }
+    .hero h1 { font-size:32px; margin-bottom:10px; }
+    .hero p { font-size:15px; color:#cbd5f5; margin-bottom:16px; }
+    .hero-small { font-size:12px; color:#94a3b8; margin-bottom:10px; }
+
+    .btn-primary,.btn-ghost{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 16px; border-radius:999px; border:1px solid transparent;
+      font-size:14px; text-decoration:none; cursor:pointer; margin-right:8px;
+    }
+    .btn-primary{ background:linear-gradient(135deg,#6366f1,#22c55e); color:#fff; }
+    .btn-primary:hover{ filter:brightness(1.08); }
+    .btn-ghost{ border-color:rgba(148,163,184,0.7); color:#e5e7eb; background:transparent; }
+    .btn-ghost:hover{ background:rgba(15,23,42,0.9); }
+
+    .hero-card{
+      border-radius:18px; padding:18px;
+      background:radial-gradient(circle at top,#0f172a,#020617);
+      border:1px solid rgba(148,163,184,0.5);
+      box-shadow:0 20px 40px rgba(15,23,42,0.9);
+      font-size:13px;
+    }
+    .hero-card h2{ font-size:18px; margin-bottom:8px; }
+    .stat-row{ display:flex; justify-content:space-between; margin-top:10px; color:#9ca3af; font-size:11px; }
+    .stat-row span strong{ color:#e5e7eb; }
+
+    section{ margin-top:30px; }
+    section h2{ font-size:22px; margin-bottom:6px; }
+    .section-sub{ font-size:14px; color:#94a3b8; margin-bottom:14px; }
+
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; }
+
+    .card{
+      background:rgba(15,23,42,0.98);
+      border-radius:14px;
+      border:1px solid rgba(148,163,184,0.5);
+      padding:14px 14px 16px;
+      font-size:13px;
+    }
+    .card h3{ font-size:16px; margin-bottom:4px; }
+    .badge{
+      display:inline-flex; align-items:center;
+      padding:2px 8px;
+      border-radius:999px;
+      font-size:11px;
+      background:rgba(30,64,175,0.8);
+      color:#e5e7eb;
+      margin-bottom:6px;
+    }
+    .card p{ color:#cbd5f5; margin-bottom:8px; }
+    .card small{ font-size:11px; color:#9ca3af; }
+
+    ul{ padding-left:18px; }
+    li{ margin-bottom:4px; }
+
+    .tip-list li{ font-size:13px; color:#e5e7eb; }
+
+    footer{
+      border-top:1px solid rgba(148,163,184,0.3);
+      margin-top:32px;
+      padding:16px 20px;
+      font-size:12px;
+      color:#94a3b8;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav-row">
+    <div class="logo">AI Study Tools</div>
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#workflows">Workflows</a>
+      <a href="#tips">Tips</a>
+      <a href="#newsletter">Updates</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="pill">For students · By a student</div>
+      <h1>Use AI to study faster, understand more, and still stay honest.</h1>
+      <p>
+        This page collects AI tools and simple workflows that actually help with
+        notes, flashcards, essays, and exam prep – without replacing your brain.
+      </p>
+      <p class="hero-small">
+        I’m 18 and I use AI every day for studying. Here’s what really works and what to avoid.
+      </p>
+      <div>
+        <a href="#tools" class="btn-primary">See recommended tools</a>
+        <a href="#workflows" class="btn-ghost">Learn study workflows</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h2>Quick setup for smarter studying</h2>
+      <p>
+        To start, all you really need is:
+      </p>
+      <ul style="margin-top:6px;">
+        <li>One AI chat tool (for explanations & summaries)</li>
+        <li>One notes/flashcard tool (for memory)</li>
+        <li>One focus system (to actually do the work)</li>
+      </ul>
+      <div class="stat-row">
+        <span>Difficulty: <strong>Beginner-friendly</strong></span>
+        <span>Time needed: <strong>10–15 min</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>AI tools that actually help you study</h2>
+    <p class="section-sub">
+      These are example categories. Replace with real tools you personally use so you stay honest and useful.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <div class="badge">Notes & Summaries</div>
+        <h3>Lecture Summarizer</h3>
+        <p>Paste your class notes or textbook text and get short, clean summaries plus key concepts.</p>
+        <small>Use for: turning long readings into 3–5 bullet-point summaries.</small>
+      </div>
+      <div class="card">
+        <div class="badge">Flashcards</div>
+        <h3>Auto-Flashcards</h3>
+        <p>Turn your notes into Q&A flashcards in seconds. Great for definitions, formulas, and vocab.</p>
+        <small>Use for: spaced repetition before exams.</small>
+      </div>
+      <div class="card">
+        <div class="badge">Explainers</div>
+        <h3>Concept Simplifier</h3>
+        <p>Ask it to explain topics “like I’m 15” and then again at exam level.</p>
+        <small>Use for: math, physics, economics, programming basics.</small>
+      </div>
+      <div class="card">
+        <div class="badge">Writing Help</div>
+        <h3>Essay Polisher</h3>
+        <p>Helps you improve grammar, structure, and clarity on drafts you already wrote.</p>
+        <small>Use for: editing, not writing your assignments for you.</small>
+      </div>
+      <div class="card">
+        <div class="badge">Planning</div>
+        <h3>Study Planner</h3>
+        <p>Give your exam date and topics and get a simple study plan broken into daily chunks.</p>
+        <small>Use for: avoiding last-minute panic studying.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflows">
+    <h2>Simple AI study workflows</h2>
+    <p class="section-sub">
+      Don’t just “ask AI for the answer”. Use it as a study partner. Here are some step-by-step ideas.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Workflow 1: Turn a boring chapter into something you understand</h3>
+        <ol style="font-size:13px; color:#e5e7eb; margin-left:16px;">
+          <li>Read the chapter quickly once (no AI yet).</li>
+          <li>Highlight parts you don’t understand.</li>
+          <li>Paste those paragraphs into an AI chat and ask: “Explain this in simple terms with a real-life example.”</li>
+          <li>Ask follow-up questions until it fully makes sense.</li>
+          <li>Write your own summary in your own words (no copy-paste).</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Workflow 2: Make flashcards from your notes</h3>
+        <ol style="font-size:13px; color:#e5e7eb; margin-left:16px;">
+          <li>Clean your notes first (remove random extra stuff).</li>
+          <li>Paste them into an AI and say: “Create flashcards in Q&A format, one concept per card.”</li>
+          <li>Copy the best ones into Anki/Quizlet or your own system.</li>
+          <li>Add any extra questions where you know you’re weak.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Workflow 3: Practice for an exam using “AI as the teacher”</h3>
+        <ol style="font-size:13px; color:#e5e7eb; margin-left:16px;">
+          <li>Tell the AI your subject and upcoming exam topic.</li>
+          <li>Ask it: “Quiz me with 10 questions, one by one. Wait for my answer. Then correct me and explain.”</li>
+          <li>Answer honestly (no cheating, don’t look at notes).</li>
+          <li>Save the questions you got wrong and review them later.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <h2>Using AI for studying without getting in trouble</h2>
+    <p class="section-sub">
+      AI is powerful, but schools have rules. Use it to learn, not to cheat.
+    </p>
+    <div class="card">
+      <ul class="tip-list">
+        <li>🔹 <strong>Always check your school’s AI policy.</strong> Some teachers allow it, some don’t.</li>
+        <li>🔹 <strong>Use AI to understand, not to copy.</strong> Rewrite things in your own words.</li>
+        <li>🔹 <strong>Don’t paste full assignments and ask it to “do it”.</strong> That’s how you get in real trouble.</li>
+        <li>🔹 <strong>Fact-check important info.</strong> AI can make mistakes, especially with dates, formulas, and citations.</li>
+        <li>🔹 <strong>Protect your privacy.</strong> Don’t paste personal data or school login info into any AI tool.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <h2>Get new AI study tips & tools (optional)</h2>
+    <p class="section-sub">
+      Later you can hook this to a real email list. For now, use it as a way to show your socials or contact.
+    </p>
+    <div class="card">
+      <p style="font-size:13px; color:#e5e7eb; margin-bottom:6px;">
+        I’m testing new AI tools and study workflows all the time. When something is actually useful, I’ll share it in short updates.
+      </p>
+      <p style="font-size:12px; color:#9ca3af;">
+        Coming soon: form here for email updates. For now, you can add:
+      </p>
+      <ul style="font-size:12px; color:#9ca3af; margin-top:4px; margin-left:16px;">
+        <li>Your Instagram / TikTok handle</li>
+        <li>Your Discord server or Telegram channel</li>
+        <li>Or just an email where people can reach you</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> AI Study Tools. Built by a student for students.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
